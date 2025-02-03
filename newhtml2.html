@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Liste des étudiants</title>
+    <link rel="icon"  type="image/png" href="ensk.jpg">
+</head>
+<style>
+    body{
+          background-image: url(blueemail.png);
+        background-repeat:2;
+        background-size: contain;
+        background-position: center;  
+        min-height: 100vh; 
+     background-color: #ffffff; 
+    }
+    table,td,th{
+    border: 2px solid #051f6c ;
+    background-color: #ffffff;
+    width: 600px;
+   }
+   td,th{ 
+    text-align: center;
+    }
+    h1{
+        text-shadow: 3PX 4px 8px 
+        rgb(58, 30, 195);
+    }
+     tbody th{
+        font-size: larger;
+        background-color: rgb(105, 180, 234);
+    }
+    .container {
+  text-align: center;
+   margin-bottom: 20PX;   
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4c4ee3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #1950c5;
+}
+.table{
+    table-layout: fixed;
+}
+</style>
+<body>
+         <h1 style="text-align: center;">La liste des étudiants</h1>
+         <div class="container"> 
+            <a href="index.html" 
+            class="back-button">Retour</a>
+          </div> 
+  <table align="center">
+    <thead>
+        <tr>
+            <th colspan="8">NOM </th><th colspan="8">PRENOM</th><th colspan="16">EMAIL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><th colspan="32">SECTION A</th></tr>
+        <tr><th colspan="32">GROUPE 1</th></tr>
+        <tr>
+            <td colspan="8">Benhabbour</td><td colspan="8">NourElhouda</td> <td colspan="16">benhabbour.nourelhouda78@g.ens-kouba.dz,</td>
+        </tr>
+        <tr>
+             <td colspan="8">Elmahdi</td> <td colspan="8">Khadidja</td><td colspan="16">elmahdi.khadidja69@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Chemlal</td><td colspan="8">Bouchra</td><td colspan="16">chemlal.bouchra79@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Hamdani</td><td colspan="8">Youcef</td><td colspan="16">hamdani.youcef91@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Bouker</td><td colspan="8">Mohamed HoussamEddine</td><td colspan="16">bouker.mohamedhoussameddine63@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8"> Azzeddine</td><td colspan="8">Abdelmouaim</td><td colspan="16">azzeddine.abdelmouaim11@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8"> Boukhaloua</td><td colspan="8">Melouka</td><td colspan="16">boukhaloua.melouka42@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Beneddine</td><td colspan="8">Aicha</td><td colspan="16">  beneddine.aicha26@g.ens-kouba.dz</beneddine.aicha26></td>
+        </tr>
+        <tr>
+            <td colspan="8">Derradji</td><td colspan="8">Maram Khadidja</td><td colspan="16">derradji.maramkhadidja50@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Benfifi</td><td colspan="8">Aymen</td><td colspan="16">benfifi.aymen36@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Agagna</td><td colspan="8">Mohamed</td><td colspan="16">agagna.mohamed60@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Bensaad</td><td colspan="8">Nouryame</td><td colspan="16">bensaad.nouryame14@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Halimafilali</td><td colspan="8">Alaeddine</td><td colspan="16">halimafilali.alaeddine57@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Ghoul</td><td colspan="8">Maroua</td><td colspan="16">ghoul.maroua48@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Djezzar</td><td colspan="8">Arwa</td><td colspan="16">djezzar.arwa99@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Djaidja</td><td colspan="8">Moundjidelhak</td><td colspan="16">djaidja.moundjidelhak46@g.ens-kouba.dz</td>
+        </tr>
+        <tr><th colspan="32">GROUPE 2</th></tr>
+        <tr>
+            <td colspan="8">Drizi</td><td colspan="8">Bouchra</td><td colspan="32">drizi.bouchra95@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Boumekhiet</td><td colspan="8">Ahmed Yassine</td><td colspan="16">boumekhiet.ahmedyassine81@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Boudour</td><td colspan="8">Chahinaz</td><td colspan="16">boudour.chahinaz49@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Bouhedi</td><td colspan="8">Yousra</td><td colspan="16">bouhedi.yousra33@g.ens-kouba.dz</td>
+        </tr>
+        
+        <tr>
+            <td colspan="8">Gahgah</td><td colspan="8">Chaima</td><td colspan="16">gahgah.chaima61@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Brahimi</td><td colspan="8">Aya</td><td colspan="16">brahimi.aya42@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Hakimi</td><td colspan="8">Meriem</td><td colspan="16">hakimi.meriem96@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Azri</td><td colspan="8">Oumaima</td><td colspan="16">azri.oumaima90@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Belkacem</td><td colspan="8">Douaa</td><td colspan="16">belkacem.douaa78@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Allal</td><td colspan="8">Radhia</td><td colspan="16">allal.radhia59@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Bendella</td><td colspan="8">Kaouter</td><td colspan="16">bendella.kaouter13@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Benzebda</td><td colspan="8">Feryal</td><td colspan="16">benzebda.feryal42@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Grid</td><td colspan="8">Rajaa</td><td colspan="16">grid.rajaa22@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Bousbia</td><td colspan="8">Mohammed</td><td colspan="16">bousbia.mohammed46@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Boussada</td><td colspan="8">Meriem</td><td colspan="16">boussada.meriem71@g.ens-kouba.dz</td>
+        </tr>
+    
+        <tr><th colspan="32">GROUPE 3</th></tr>
+        <tr>
+            <td colspan="8">Chikhi</td><td colspan="8">Yasser</td><td colspan="16">chikhi.yasser69@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Belarbi</td><td colspan="8">Imane</td><td colspan="16">belarbi.imane20@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Abdoudi</td><td colspan="8">Aya</td><td colspan="16">abdoudi.aya28@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Bouzeraib</td><td colspan="8">Sara</td><td colspan="16">bouzeraib.sara33@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Tabti</td><td colspan="8">Abderrahmane</td><td colspan="16">tabti.abderrahmane64@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Boumenad</td><td colspan="8">Kheira Chaima</td><td colspan="16">boumenad.kheirachaima59@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Boucetta</td><td colspan="8">Zahoua Rania</td><td colspan="16">boucetta.zahouarania78@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Allal</td><td colspan="8">Kheira</td><td colspan="16">allal.kheira86@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Chaker</td><td colspan="8">Hafsa</td><td colspan="16">chaker.hafsa61@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Benaissa</td><td colspan="8">Basma</td><td colspan="16">benaissa.basma98@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Alliche</td><td colspan="8">Amina</td><td colspan="16">alliche.amina75@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Akriche</td><td colspan="8">Basmala</td><td colspan="16">akriche.basmala60@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Bouabibsa</td><td colspan="8">Messaouda</td><td colspan="16">bouabibsa.messaouda66@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Boukhari</td><td colspan="8">Kheira</td><td colspan="16">boukhari.kheira26@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Belkhoudja</td><td colspan="8">Maroua</td><td colspan="16">belkhoudja.maroua88@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Bellid</td><td colspan="8">Berssimalaaellah</td><td colspan="16">bellid.berssimalaaellah99@g.ens-kouba.dz</td>
+        </tr>
+        <tr><th colspan="32">SECTION B</th></tr>
+        <tr> <th colspan="32">GROUPE 4</th></tr>
+        <tr>
+            <td colspan="8">Kechbar</td><td colspan="8">Seha</td><td colspan="16">kechbar.seha60@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Kachou</td><td colspan="8">Mohamed Elamine</td><td colspan="16">kachou.mohamedelamine35@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Boulegheb</td><td colspan="8">Khadidja</td><td colspan="16">boulegheb.khadidja73@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Sitayeb</td><td colspan="8">Ikram</td><td colspan="16">sitayeb.ikram91@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Kasfar</td><td colspan="8">Aya</td><td colspan="16">kasfar.aya75@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Chikh</td><td colspan="8">Abdelhakim</td><td colspan="16">chikh.abdelhakim35@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Benmessaoud</td><td colspan="8">Rabeh</td><td colspan="16">ben.messaoudrabeh79@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Maaradji</td><td colspan="8">Mohamed Rafik</td><td colspan="16">maaradji.mohamedrafik62@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Kehoul</td><td colspan="8">Mustapha</td><td colspan="16">kehoul.mustapha84@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Lagraf</td><td colspan="8">Houari</td><td colspan="16">lagraf.houari90@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Hamouche</td><td colspan="8">Hizia</td><td colspan="16">hamouche.hizia72@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Taouint</td><td colspan="8">Sarah</td><td colspan="16">taouint.sarah16@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Lafkir</td><td colspan="8">Abdeldjalile</td><td colspan="16">lafkir.abdeldjalile35@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Koumad</td><td colspan="8">Salaheddine</td><td colspan="16">koumad.salaheddine25@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Zelfa</td><td colspan="8">Ahlam</td><td colspan="16">zelfa.ahlam56@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Kelaiaia</td><td colspan="8">Kheloud</td><td colspan="16">kelaiaia.kheloud30@g.ens-kouba.dz</td>
+        </tr>
+          <tr><th colspan="32">GROUPE 5</th></tr>
+        <tr>
+            <td colspan="8">Rahmani</td><td colspan="8">Ihab Abdelhassib</td><td colspan="16">rahmani.ihababdelhassib15@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Mehdid</td><td colspan="8">Chaima</td><td colspan="16">mehdid.chaima39@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Messeguem</td><td colspan="8">Khadidja</td><td colspan="16">messeguem.khadidja95@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Seghilani</td><td colspan="8">Latifa</td><td colspan="16">seghilani.latifa51@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Messaoudi</td><td colspan="8">Rahil</td><td colspan="16">messaoudi.rahil68@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Laouini</td><td colspan="8">Bensalem</td><td colspan="16">laouini.bensalem23@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Maklouf</td><td colspan="8">Zohra</td><td colspan="16">maklouf.zohra53@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Lardjem</td><td colspan="8">Roumaissa</td><td colspan="16">lardjem.roumaissa16@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Achouri</td><td colspan="8">Ayeman</td><td colspan="16">achouri.ayeman11@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Mahammedi</td><td colspan="8">Meriem Aya</td><td colspan="16">mahammedi.meriemaya65@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Mahammedi</td><td colspan="8">Allaaeddine</td><td colspan="16">mahammedi.allaaeddine57@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Metene</td><td colspan="8">Basmala</td><td colspan="16">metene.basmala50@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Lakhdari</td><td colspan="8">Faroudja</td><td colspan="16">lakhdari.faroudja46@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Samah</td><td colspan="8">Lyna</td><td colspan="16">samah.lyna46@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Madaoui</td><td colspan="8">Nourelhouda</td><td colspan="16">madaoui.nourelhouda61@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Metahri</td><td colspan="8">Aya</td><td colspan="16">metahri.aya54@g.ens-kouba.dz</td>
+        </tr>
+        <tr><th colspan="32">GROUPE 6</th></tr>
+        <tr>
+            <td colspan="8">Mouici</td><td colspan="8">Nihad</td><td colspan="16">mouici.nihad93@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Oueldbouli</td><td colspan="8">Ismahen</td><td colspan="16">oueld.bouliismahen53@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Saadi</td><td colspan="8">Ouidad</td><td colspan="16">saadi.ouidad36@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Otmani</td><td colspan="8">Houda</td><td colspan="16">otmani.houda26@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Mida</td><td colspan="8">Bouthaina</td><td colspan="16">mida.bouthaina59@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Otmani</td><td colspan="8">Bouchra</td><td colspan="16">otmani.bouchra37@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Rabah</td><td colspan="8">Anfel</td><td colspan="16">rabah.anfel70@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Sitayeb</td><td colspan="8">Ikram</td><td colspan="16">sitayeb.ikram91@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Sefsaf</td><td colspan="8">Nassima</td><td colspan="16">sefsaf.nassima17@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Zenikhri</td><td colspan="8">Abdelbadia</td><td colspan="16">zenikhri.abdelbadia71@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Nouari</td><td colspan="8">Atallah Abdesslam</td><td colspan="16">nouari.atallahabdesslam54@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Nassar</td><td colspan="8">Souhila</td><td colspan="16">nassar.souhila31@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Sinaceur</td><td colspan="8">Souhila</td><td colspan="16">si.naceursouhila87@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Missoum</td><td colspan="8">Noureddine</td><td colspan="16">missoum.noureddine18@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Sehil</td><td colspan="8">Hanane</td><td colspan="16">sehil.hanane95@g.ens-kouba.dz</td>
+        </tr>
+        <tr>
+            <td colspan="8">Louber</td><td colspan="8">Rihab Amina</td><td colspan="16">louber.rihabamina63@g.ens-kouba.dz</td>
+        </tr>
+    </tbody>
+           
+  </table>
+</body>
+</html>

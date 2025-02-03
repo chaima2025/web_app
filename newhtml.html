@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>l'emploi du temps</title>
+    <link rel="icon" type="image/png" href="ensk.jpg">
+</head>
+<style>
+    body{
+    background-image: url(clock.webp);      
+    background-repeat: no-repeat;
+    background-size:cover;
+    backdrop-filter: blur(2px); 
+    background-position: center; 
+    min-height: 100vh; 
+    overflow: scroll;
+    }
+    h1{
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 450px;  
+    color: rgb(5, 5, 6);
+    font-size: 3em;
+    text-transform: capitalize; 
+    text-align: center;
+    cursor: default;
+    text-shadow: 4px 4px 5px rgb(175, 32, 132);
+    }
+    a{
+    font-size: larger;
+    color:rgb(0, 0, 0);
+    list-style-type: circle;
+    text-decoration: none;
+    }
+    h3{
+        font-size: 1.5rem;
+        color: rgb(0, 0, 0);
+        text-shadow: 3PX 4px 8px rgb(242, 165, 242);
+        text-decoration:underline;
+    }
+    table, td,th{
+    border: 2px solid rgb(175, 32, 132) ;
+    background-color: #FED9ED;
+   }
+   td,th{ 
+    text-align: center;
+   }
+   thead th:first-child{
+    background-color: #BB9CC0;
+}
+ #table1 td:empty { 
+    background-color: #BB9CC0;
+}
+#table1 tr:first-child td:nth-child(4){
+    background-color: #BB9CC0;
+}
+#table1 tr:nth-child(2) td:last-child{
+    background-color: #BB9CC0;
+}
+#table2 td:empty { 
+    background-color: #BB9CC0;
+}
+ #table2  tr:first-child  td:nth-child(3) { 
+    background-color: #BB9CC0;
+}
+#table2  tr:first-child  td:nth-child(4) { 
+    background-color: #BB9CC0;
+} 
+#table3 td:empty { 
+    background-color: #BB9CC0;
+}
+#table3 tr:first-child td:nth-child(2n+1) { 
+    background-color: #BB9CC0;
+}
+#table4 td:empty { 
+    background-color: #BB9CC0;
+}
+#table4  tr:first-child td:nth-child(2) { 
+    background-color: #BB9CC0;
+}
+#table4  tr:first-child td:nth-child(4) { 
+    background-color: #BB9CC0;
+}
+#table5 td:empty { 
+    background-color: #BB9CC0;
+}
+#table5 tr:first-child td:nth-child(even) { 
+    background-color: #BB9CC0;
+}
+#table5 tr:nth-child(2) td:last-child { 
+    background-color: #BB9CC0;
+}
+#table5 tr:nth-child(4) td:nth-child(5) { 
+    background-color: #BB9CC0;
+}
+#table6 td:empty { 
+    background-color: #BB9CC0;
+}
+.container {
+  text-align: center;
+   margin-top: 50px; 
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e9358c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e039b3;
+}
+.table{
+        table-layout: fixed;
+    }
+p{
+    font-size: larger;
+   font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<body>
+    
+    <h1>L'emploi du temps :</h1> <br>
+<p> Clickez sur votre groupe :</p>
+    <ul>
+   <li><a href="#1"> Groupe 1</a></li>
+   <li><a href="#2"> Groupe 2</a></li>
+   <li><a href="#3"> Groupe 3</a></li>
+   <li><a href="#4"> Groupe 4</a></li>
+   <li><a href="#5"> Groupe 5</a></li>
+   <li><a href="#6"> Groupe 6</a></li>
+    </ul>
+
+<h3 id="1" style="text-align: center;" > Groupe 1 :</h3>
+<table id="table1" align="center">
+    <thead> 
+  <tr>
+      <th colspan="4"></th>
+      <th colspan="4">8:3O  9:55</th>
+      <th colspan="4">9:55  11:20</th>
+      <th colspan="4">11:20  12:45</th>
+      <th colspan="4">12:45   14:10</th>
+      <th colspan="4">14:10   15:35</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+       <th colspan="4">Dimanch </th>
+       <td colspan="4">Cours Compilation</td>
+       <td colspan="4">TP web</td>
+       <td colspan="4"> </td>
+       <td colspan="4"></td>
+       <td colspan="4">Cours Réseau</td>
+   </tr>
+   <tr>
+       <th colspan="4">Lundi</th>
+       <td colspan="4">Cours Psychologie</td>
+       <td colspan="4"> TD compilation</td>
+       <td colspan="4">Cours SE</td>
+       <td colspan="4">TP Compilation</td>
+       <td colspan="4"> </td>
+   </tr>
+   <tr>
+       <th colspan="4">Mardi </th>
+       <td colspan="4"></td>
+       <td colspan="4">Cours Réseau</td>
+       <td colspan="4">TP Réseau</td>
+       <td colspan="4">Cours AI</td>
+       <td colspan="4"></td>
+   </tr>
+   <tr>
+       <th colspan="4">Mercredi</th>
+       <td colspan="4"></td>
+       <td colspan="4">Cours SE</td>
+       <td colspan="4">TD RO</td>
+       <td colspan="4">Cours Web </td>
+       <td colspan="4"></td>
+   </tr>
+   <tr>
+       <th colspan="4">Jeudi</th>
+       <td colspan="4">TD Psychologie</td>
+       <td colspan="4">TD SE</td>
+       <td colspan="4">Cours RO</td>
+       <td colspan="4">Cours SI</td>
+       <td colspan="4">Cours Anglais</td>
+   </tr>
+  </tbody>
+</table>
+<h3 id="2" style="text-align: center;"> Groupe 2 :</h3>
+<table id="table2" align="center">
+    <thead> 
+  <tr>
+      <th colspan="4"></th>
+      <th colspan="4">8:3O  9:55</th>
+      <th colspan="4">9:55  11:20</th>
+      <th colspan="4">11:20  12:45</th>
+      <th colspan="4">12:45   14:10</th>
+      <th colspan="4">14:10   15:35</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+       <th colspan="4">Dimanch </th>
+       <td colspan="4">Cours Compilation </td>
+       <td colspan="4"> </td>
+       <td colspan="4"> </td>
+       <td colspan="4"> TD compilation</td>
+       <td colspan="4"> Cours Réseau</td>
+   </tr>
+   <tr>
+       <th colspan="4">Lundi</th>
+       <td colspan="4">Cours Psychologie</td>
+       <td colspan="4">TD SE</td>
+       <td colspan="4">TCours SE</td>
+       <td colspan="4"></td>
+       <td colspan="4">TP Web </td>
+   </tr>
+   <tr>
+       <th colspan="4">Mardi </th>
+       <td colspan="4">TP Réseau</td>
+       <td colspan="4">Cours Réseau</td>
+       <td colspan="4"></td>
+       <td colspan="4">Cours AI</td>
+       <td colspan="4"></td>
+   </tr>
+   <tr>
+       <th colspan="4">Mercredi</th>
+       <td colspan="4"></td>
+       <td colspan="4">Cours SE</td>
+       <td colspan="4">TD RO</td>
+       <td colspan="4">Cours Web</td>
+       <td colspan="4">TP Compilation</td>
+   </tr>
+   <tr>
+       <th colspan="4">Jeudi</th>
+       <td colspan="4"></td>
+       <td colspan="4">TD Psychologie</td>
+       <td colspan="4">Cours RO</td>
+       <td colspan="4">Cours SI</td>
+       <td colspan="4">Cours Anglais</td>
+   </tr>
+  </tbody>
+</table>
+<h3 id="3" style="text-align: center;"> Groupe 3 :</h3>
+<table id="table3" align="center">
+    <thead> 
+  <tr>
+      <th colspan="4"></th>
+      <th colspan="4">8:3O  9:55</th>
+      <th colspan="4">9:55  11:20</th>
+      <th colspan="4">11:20  12:45</th>
+      <th colspan="4">12:45   14:10</th>
+      <th colspan="4">14:10   15:35</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+       <th colspan="4">Dimanch </th>
+       <td colspan="4"> Cours Compilation</td>
+       <td colspan="4"> </td>
+       <td colspan="4"> TP Réseau</td>
+       <td colspan="4"> </td>
+       <td colspan="4"> Cours Réseau</td>
+   </tr>
+   <tr>
+       <th colspan="4">Lundi</th>
+       <td colspan="4">Cours Psychologie</td>
+       <td colspan="4">TP Web</td>
+       <td colspan="4">Cours SE</td>
+       <td colspan="4">TD Psychologie</td>
+       <td colspan="4"></td>
+   </tr>
+   <tr>
+       <th colspan="4">Mardi </th>
+       <td colspan="4">TD Compilation</td>
+       <td colspan="4">Cours Réseau</td>
+       <td colspan="4"></td>
+       <td colspan="4">Cours AI</td>
+       <td colspan="4"></td>
+   </tr>
+   <tr>
+       <th colspan="4">Mercredi</th>
+       <td colspan="4">TP Compilation</td>
+       <td colspan="4">Cours SE</td>
+       <td colspan="4"></td>
+       <td colspan="4">Cours Web</td>
+       <td colspan="4">TD RO</td>
+   </tr>
+   <tr>
+       <th colspan="4">Jeudi</th>
+       <td colspan="4">TD SE</td>
+       <td colspan="4"></td>
+       <td colspan="4">Cours RO</td>
+       <td colspan="4">Cours SI</td>
+       <td colspan="4">Cours Anglais</td>
+   </tr>
+  </tbody>
+</table>
+<h3 id="4" style="text-align: center;" > Groupe 4 :</h3>
+<table id="table4" align="center" >
+    <thead> 
+  <tr>
+      <th colspan="4"></th>
+      <th colspan="4">8:3O  9:55</th>
+      <th colspan="4">9:55  11:20</th>
+      <th colspan="4">11:20  12:45</th>
+      <th colspan="4">12:45   14:10</th>
+      <th colspan="4">14:10   15:35</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+       <th colspan="4">Dimanch </th>
+       <td colspan="4"> </td>
+       <td colspan="4"> Cours Compilation</td>
+       <td colspan="4"> </td>
+       <td colspan="4"> Cours Réseau</td>
+       <td colspan="4">TD Compilation</td>
+   </tr>
+   <tr>
+       <th colspan="4">Lundi</th>
+       <td colspan="4">TP Web</td>
+       <td colspan="4">Cours Psychologie</td>
+       <td colspan="4"></td>
+       <td colspan="4">Cours SE</td>
+       <td colspan="4"></td>
+   </tr>
+   <tr>
+       <th colspan="4">Mardi </th>
+       <td colspan="4">Cours Réseau</td>
+       <td colspan="4">TP Réseau</td>
+       <td colspan="4">TD SE</td>
+       <td colspan="4"></td>
+       <td colspan="4">Cours AI</td>
+   </tr>
+   <tr>
+       <th colspan="4">Mercredi</th>
+       <td colspan="4"></td>
+       <td colspan="4">TD RO</td>
+       <td colspan="4">Cours SE</td>
+       <td colspan="4">TP Compilation</td>
+       <td colspan="4">Cours Web</td>
+   </tr>
+   <tr>
+       <th colspan="4">Jeudi</th>
+       <td colspan="4"></td>
+       <td colspan="4">Cours RO</td>
+       <td colspan="4">TD Psychologie</td>
+       <td colspan="4">Cours Anglai</td>
+       <td colspan="4">Cours SI</td>
+   </tr>
+  </tbody>
+</table>
+<h3 id="5" style="text-align: center;"> Groupe 5 :</h3>
+<table id="table5" align="center">
+    <thead> 
+  <tr>
+      <th colspan="4"></th>
+      <th colspan="4">8:3O  9:55</th>
+      <th colspan="4">9:55  11:20</th>
+      <th colspan="4">11:20  12:45</th>
+      <th colspan="4">12:45   14:10</th>
+      <th colspan="4">14:10   15:35</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+       <th colspan="4">Dimanch </th>
+       <td colspan="4"> </td>
+       <td colspan="4"> Cours Compilation</td>
+       <td colspan="4"> </td>
+       <td colspan="4"> Cours Réseau</td>
+       <td colspan="4"> </td>
+   </tr>
+   <tr>
+       <th colspan="4">Lundi</th>
+       <td colspan="4">TD Compilation</td>
+       <td colspan="4">Cours Psychologie</td>
+       <td colspan="4">TP Web</td>
+       <td colspan="4">Cours SE</td>
+       <td colspan="4"> </td>
+   </tr>
+   <tr>
+       <th colspan="4">Mardi </th>
+       <td colspan="4">Cours Réseau</td>
+       <td colspan="4">TD SE</td>
+       <td colspan="4">TP Réseau</td>
+       <td colspan="4"></td>
+       <td colspan="4">Cours AI</td>
+   </tr>
+   <tr>
+       <th colspan="4">Mercredi</th>
+       <td colspan="4">TD RO</td>
+       <td colspan="4">TP Compilation</td>
+       <td colspan="4">Cours SE</td>
+       <td colspan="4"> </td>
+       <td colspan="4">Cours Web</td>
+   </tr>
+   <tr>
+       <th colspan="4">Jeudi</th>
+       <td colspan="4">TD Psychologie</td>
+       <td colspan="4">Cours RO</td>
+       <td colspan="4"></td>
+       <td colspan="4">Cours SI</td>
+       <td colspan="4">Cours Anglais</td>
+   </tr>
+  </tbody>
+</table>
+<h3 id="6" style="text-align: center;"> Groupe 6 :</h3>
+<table id="table6" align="center" >
+    <thead> 
+  <tr>
+      <th colspan="4"></th>
+      <th colspan="4">8:3O  9:55</th>
+      <th colspan="4">9:55  11:20</th>
+      <th colspan="4">11:20  12:45</th>
+      <th colspan="4">12:45   14:10</th>
+      <th colspan="4">14:10   15:35</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+       <th colspan="4">Dimanch </th>
+       <td colspan="4">TP Web</td>
+       <td colspan="4"> Cours Compilation</td>
+       <td colspan="4"></td>
+       <td colspan="4"> Cours Réseau</td>
+       <td colspan="4">TP Réseau</td>
+   </tr>
+   <tr>
+       <th colspan="4">Lundi</th>
+       <td colspan="4"></td>
+       <td colspan="4">Cours Psychologie</td>
+       <td colspan="4"></td>
+       <td colspan="4">Cours SE</td>
+       <td colspan="4">TD Psychologie</td>
+   </tr>
+   <tr>
+       <th colspan="4">Mardi </th>
+       <td colspan="4">Cours Réseau</td>
+       <td colspan="4">TD Compilation</td>
+       <td colspan="4"></td>
+       <td colspan="4">TP Compilation</td>
+       <td colspan="4">Cours AI</td>
+   </tr>
+   <tr>
+       <th colspan="4">Mercredi</th>
+       <td colspan="4"></td>
+       <td colspan="4"></td>
+       <td colspan="4">Cours SE</td>
+       <td colspan="4">TD RO</td>
+       <td colspan="4">Cours Web</td>
+   </tr>
+   <tr>
+       <th colspan="4">Jeudi</th>
+       <td colspan="4"></td>
+       <td colspan="4">Cours RO</td>
+       <td colspan="4"> TD SE</td>
+       <td colspan="4">Cours Anglais</td>
+       <td colspan="4">Cours SI </td>
+   </tr>
+  </tbody>
+</table>
+<footer class="container"> 
+    <a href="index.html" 
+     class="back-button">Retour</a>
+  </footer> 
+</body>
+</html>
